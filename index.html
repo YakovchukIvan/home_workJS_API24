@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Exchange rate</title>
+</head>
+
+<body>
+    <!-- <h1>Exchange rate in <mark>Java Script</mark></h1> -->
+
+    <!-- <table id="ltblBAK" width="100%" border=1>
+			<tr>
+				<th>Валюта</th>
+				<th>Купівля</th>
+				<th>Продаж</th>
+			</tr>
+			<tr>
+				<td><img src="./img/usd.jpg" class="leftimg-v" alt="USD" width=75 height=50>
+				<b><font style="font-size : 10px; font-family : Arial; bold;">USD</font><b></td>
+				<td class="tbl" align="center"><b class="usd1"></b></td>
+				<td class="tbl"align="center"><b class="usd2"></b></td>	
+			</tr>
+			<tr>
+				<td><img src="./img/euro.jpg" class="leftimg-v" alt="EUR" width=75 height=50>
+				<b><font style="font-size : 10px; font-family : Arial; bold;">EUR</font><b></td>
+				<td class="tbl" align="center"><b class="eur1"></b></td>
+				<td class="tbl" align="center"><b class="eur2"></b></td>	
+			</tr>
+		</table> -->
+
+    <div class="main">
+        <h2>Курс валют приват банк</h2>
+
+        <div>
+            <table>
+                <tr>
+                    <th>CCY</th>
+                    <th>BASE CCY</th>
+                    <th>BUY</th>
+                    <th>SALE</th>
+                </tr>
+                <tr>
+                    <td class="n1and1"></td>
+                    <td class="n1and2"></td>
+                    <td class="n1and3"></td>
+                    <td class="n1and4"></td>
+                </tr>
+                <tr>
+                    <td class="n2and1"></td>
+                    <td class="n2and2"></td>
+                    <td class="n2and3"></td>
+                    <td class="n2and4"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- <div>
+        <p>Конвертувати валюту</p>
+        <div class="block__convertor">
+          <input
+            type="text"
+            class="input__valute"
+            placeholder="Напишіть вашу суму"
+          />
+          <select class="list__valute-option">
+            <option value="eur" class="item__option-eur">EUR</option>
+            <option value="usd" class="item__option-usd">USD</option>
+          </select>
+          <button type="submit" class="btn__convertor">Обмін</button>
+          <p class="out__valute"></p>
+        </div>
+      </div> -->
+
+        <h2 class="calculator">Конвертор валют</h2>
+        <div class="block__convertor">
+            <div class="calBUY">
+                <h3>Продати</h3>
+                <div>
+                    <input id="" class="inputBUY" type="number" />
+                </div>
+                <div class="wrapper__btn">
+                    <button onclick="buyUSD()" class="baySale">USD</button>
+                    <button onclick="buyEUR()" class="baySale">EUR</button>
+                </div>
+                <p class="icvelsBUY">0 UAN</p>
+            </div>
+
+            <div class="calSALE">
+                <h3>Купити</h3>
+                <div>
+                    <input id="" class="inputSALE" type="number" />
+                </div>
+                <div class="wrapper__btn">
+                    <button onclick="saleUSD()" class="baySale">USD</button>
+                    <button onclick="saleEUR()" class="baySale">EUR</button>
+                </div>
+                <p class="icvelsSELE">0 UAN</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

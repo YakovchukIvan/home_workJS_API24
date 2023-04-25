@@ -11,7 +11,7 @@ html {
 
 body {
     margin: 0;
-    padding: 20px;
+    padding: 20px 20px 100px 20px;
     background-color: rgb(56, 56, 56);
     font-family: "Roboto", sans-serif;
     font-size: 1.2rem;
@@ -71,7 +71,19 @@ th {
     font-weight: 900;
 }
 
-.block__convertor {
+.title__buy,
+.title__sale {
+    margin: 0;
+}
+
+.block__buy, 
+.block__sale {
+    margin-top: 50px;
+}
+
+
+.block__convertor, 
+.block__convertor-sale {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -87,7 +99,8 @@ th {
     padding: 20px;
 }
 
-.input__valute {
+.input__valute,
+.input__valute-sale {
     background-color: white;
     border: none;
     border-radius: 5px;
@@ -101,7 +114,8 @@ th {
     outline: none;
 }
 
-.out__valute {
+.out__valute,
+.out__valute-sale {
     background-color: white;
     border-radius: 5px;
     min-width: 200px;
@@ -116,3 +130,4 @@ th {
     display: flex;
     flex-direction: row;
 }
+

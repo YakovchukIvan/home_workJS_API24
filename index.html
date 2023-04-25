@@ -12,7 +12,7 @@
 <body>
     <!-- <h1>Exchange rate in <mark>Java Script</mark></h1> -->
 
-    <!-- <table id="ltblBAK" width="100%" border=1>
+        <!-- <table id="ltblBAK" width="100%" border=1>
 			<tr>
 				<th>Валюта</th>
 				<th>Купівля</th>
@@ -40,8 +40,8 @@
                 <tr>
                     <th>CCY</th>
                     <th>BASE CCY</th>
-                    <th>BUY</th>
-                    <th>SALE</th>
+                    <th>купити</th>
+                    <th>продаж</th>
                 </tr>
                 <tr>
                     <td class="n1and1"></td>
@@ -58,24 +58,39 @@
             </table>
         </div>
 
-        <!-- <div>
-        <p>Конвертувати валюту</p>
-        <div class="block__convertor">
-          <input
-            type="text"
-            class="input__valute"
-            placeholder="Напишіть вашу суму"
-          />
-          <select class="list__valute-option">
-            <option value="eur" class="item__option-eur">EUR</option>
-            <option value="usd" class="item__option-usd">USD</option>
-          </select>
-          <button type="submit" class="btn__convertor">Обмін</button>
-          <p class="out__valute"></p>
-        </div>
-      </div> -->
+        <p class="showCurrency">Показати курс всієї валюти</p>
 
-        <h2 class="calculator">Конвертор валют</h2>
+        <div class="block__buy">
+            <p class="title__buy">Конвертор покупки валюти</p>
+            <div class="block__convertor">
+            <input
+                type="text"
+                class="input__valute"
+                placeholder="В мене є гривень"
+            />
+            <select class="list__valute-option">
+                <option value="eur" class="item__option-eur">EUR</option>
+                <option value="usd" class="item__option-usd">USD</option>
+            </select>
+            <button type="submit" class="btn__convertor">Обмін</button>
+            <p class="out__valute"></p>
+            </div>
+        </div>
+        
+        <div class="block__sale">
+            <p class="title__sale">Конвертор продажу валюти</p>
+            <div class="block__convertor-sale">
+                <input type="text" class="input__valute-sale" placeholder="В мене є валюти" />
+                <select class="list__valute-option-sale">
+                    <option value="eur" class="item__option-eur">EUR</option>
+                    <option value="usd" class="item__option-usd">USD</option>
+                </select>
+                <button type="submit" class="btn__convertor-sale">Обмін</button>
+                <p class="out__valute-sale"></p>
+            </div>
+        </div>
+
+        <!-- <h2 class="calculator">Конвертор валют</h2>
         <div class="block__convertor">
             <div class="calBUY">
                 <h3>Продати</h3>
@@ -100,7 +115,7 @@
                 </div>
                 <p class="icvelsSELE">0 UAN</p>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <script src="./script.js"></script>

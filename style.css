@@ -12,16 +12,45 @@ html {
 body {
     margin: 0;
     padding: 20px 20px 100px 20px;
-    background-color: rgb(56, 56, 56);
+    background-color: #F2F5F8;
     font-family: "Roboto", sans-serif;
     font-size: 1.2rem;
+    /* width: 1200px; */
     min-height: 100vh;
-    width: 100%;
-    /* display: grid;
-    place-content: center;
-    text-align: center; */
-    color: aliceblue;
+    margin: 40px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* border: 2px solid red; */
 }
+
+.wrapper {
+    position: relative;
+    max-width: 1000px;
+    height: max-content;
+    /* border: 2px solid red; */
+}
+
+.container {
+    position: absolute;
+    border: 2px soldi black;
+    top: 0px;
+    right: 75px;
+}
+
+aside {
+    position: fixed;
+    transform: translateX(-100%);
+    /* border: 2px solid rgb(38, 0, 255); */
+}
+
+.table__main {
+   /* border: 2px solid rgb(0, 247, 255); */
+
+}
+
+
+
 
 h2 {
     margin-top: 0;
@@ -30,8 +59,6 @@ h2 {
 div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 20px;
 }
 
@@ -54,23 +81,25 @@ button:active {
 }
 
 table {
-    border: 3px solid white;
-    border-collapse: collapse;
     width: 600px;
-    /* height: 200px; */
+    background-color: #fff;
+    /* border: 3px solid rgb(0, 0, 0); */
+    border-collapse: collapse;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 td,
 th {
-    border: 2px solid white;
+    border: 1px solid rgb(175, 175, 175);
     text-align: center;
     width: 100px;
     height: 60px;
 }
 
 th {
-    color: rgb(212, 76, 76);
+    color: #000;
     font-weight: 900;
+    
 }
 
 .title__buy,
@@ -78,19 +107,17 @@ th {
     margin: 0;
 }
 
-.block__buy, 
-.block__sale {
-    margin-top: 50px;
+.block__buy {
+    margin-bottom: 40px;
 }
-
 
 .block__convertor, 
 .block__convertor-sale {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    background-color: #fff;
     box-shadow: rgba(170, 165, 165, 0.986) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
     padding: 20px;
 }
@@ -103,13 +130,13 @@ th {
 
 .input__valute,
 .input__valute-sale {
-    background-color: white;
+    background-color: rgb(204, 199, 199);
     border: none;
     border-radius: 5px;
     width: 200px;
     height: 25px;
     font-size: 16px;
-    padding: 8px 16px;
+    padding: 16px 8px;
 }
 
 .input__valute:focus {
@@ -118,14 +145,16 @@ th {
 
 .out__valute,
 .out__valute-sale {
-    background-color: white;
+    background-color: rgb(204, 199, 199);
     border-radius: 5px;
-    min-width: 200px;
-    min-height: 25px;
-    font-size: 18px;
+    width: 200px;
+    height: 25px;
+    font-size: 16px;
     color: black;
-    text-align: center;
-    padding: 2px 6px;
+    display: flex;
+    align-items: center;
+    padding: 16px 8px;
+    margin: 0;
 }
 
 .wrapper__btn {
@@ -134,7 +163,8 @@ th {
 }
 
 .showCurrency {
-    border: 1px solid #fff;
+    width: max-content;
+    border: 1px solid #818181;
     border-radius: 16px;
     cursor: pointer;
     padding: 8px 16px;

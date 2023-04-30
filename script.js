@@ -57,7 +57,7 @@ async function privatbank(url) {
 
         if (a == showValute.currency.toLowerCase()) {
           const result = parseInt(input__valute.value) / showValute.purchaseRateNB;
-          out__valute.textContent = result.toFixed(2) + " " + showValute.baseCurrency;
+          out__valute.textContent = result.toFixed(2) + " " + showValute.currency;
           break;
         } else {console.log("error")}
       }
@@ -86,12 +86,13 @@ async function privatbank(url) {
         let result = data.exchangeRate[i];
         console.log(result);
 
+        if(result.currency != "USD" && result.currency != "EUR")
         tableArhive.insertAdjacentHTML("beforeend", `
           <tr>
             <td class="1">${result.currency}</td>
             <td class="2">${result.baseCurrency}</td>
-            <td class="3">${result.purchaseRateNB}</td>
-            <td class="4">${result.saleRateNB}</td>
+            <td class="3">${result.purchaseRateNB.toFixed(2)}</td>
+            <td class="4">${result.saleRateNB.toFixed(2)}</td>
           </tr>
         `)
 
